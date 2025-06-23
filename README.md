@@ -3,7 +3,7 @@
 This is a fun, interactive dice-rolling game built with React, allowing two players to roll virtual dice and see who wins, loses, or draws. It features sound effects to enhance the experience and allows the first player to change their name dynamically.
 
 ## Demo
-[Live Demo](https://dice-game-one-fawn.vercel.app/) - Play the game online!
+[Live Demo](https://dice-game-two-fawn.vercel.app/) - Play the game online!
 
 ## Featuress
 - 🎲 Roll two dice and compare results.
