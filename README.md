@@ -29,7 +29,7 @@ This is a fun, interactive dice-rolling game built with React, allowing two play
 
 1. Clone this repository:
    ```bash
-    git clone https://github.com/UrsulaBurak/Dice-Game.git
+    git clone https://github.com/ursulaburak/Dice-Game.git
 2. Navigate to the project directory:
     ```bash
     cd dice-game
