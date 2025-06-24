@@ -1,12 +1,30 @@
-# React + Vite
+# Questions App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🎯 **Questions App**, kullanıcıya rastgele sorular yönelten ve her soruya dört şıklı cevap seçenekleri sunan interaktif bir quiz (soru-cevap) uygulamasıdır. React ve Vite kullanılarak geliştirilmiş, sade ve kullanıcı dostu bir arayüz sunar.
 
-Currently, two official plugins are available:
+🔗 Canlı Uygulama: [https://silver-questions-app.vercel.app](https://silver-questions-app.vercel.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Özellikler
 
-## Expanding the ESLint configuration
+- 📋 Çoktan seçmeli sorular
+- ⏱️ Hızlı ve etkileşimli kullanıcı deneyimi
+- 🎨 Basit ve şık tasarım (Material UI desteği)
+- ✅ Doğru/yanlış cevap geri bildirimi
+- 🏁 Quiz bitiminde sonuç ekranı
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Kullanılan Teknolojiler
+
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Material UI](https://mui.com/) – tasarım bileşenleri için
+- [Vercel](https://vercel.com/) – canlı dağıtım
+
+## 📂 Kurulum
+
+Projeyi kendi bilgisayarınızda çalıştırmak için:
+
+```bash
+git clone https://github.com/kullanici-adi/silver-questions-app.git
+cd silver-questions-app
+npm install
+npm run dev
