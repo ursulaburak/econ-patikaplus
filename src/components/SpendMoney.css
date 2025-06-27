@@ -1,0 +1,49 @@
+.balanceValue{
+  background:linear-gradient(180deg,#2ecc71,#1abc9c);
+}
+
+.money{
+  font-weight: 700;
+  font-size: 2rem;
+}
+.item-name{
+  color: #333;
+  font-weight: 700;
+  font-size: 1.375rem;
+
+}
+
+.item-price{
+  color: #24c486;
+  font-weight: 500;
+  font-size: 1.25rem;
+}
+
+.buttons{
+  font-weight: 700;
+  border-radius: 3px!important;
+
+}
+
+button:disabled {
+  background: #f1f2f6 !important;
+  color: #333 !important;
+}
+
+
+.item-buy{
+  background:linear-gradient(180deg,#2ecc71,#1abc9c); 
+  color: #ffffff!important;
+
+  }
+
+.item-sell{
+  background: linear-gradient(180deg,#f53b82,#f53b57);
+  color: #ffffff!important;
+
+}
+
+.item-input{
+  border: 1px solid #b2bec3;
+  border-radius: 3px!important;
+}

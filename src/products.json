@@ -1,0 +1,314 @@
+{
+    "items": [
+    {   
+        "id":1,
+        "title": "Big Mac",
+        "price": 2,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/big-mac.jpg",
+        "isSellDisabled":false
+    },
+    {
+        "id":2,
+        "title": "Tesla",
+        "price": 75000,
+        "piece":0,
+        "imageUrl":"https://neal.fun/spend/images/tesla.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":3,
+        "title": "McDonalds Franchise",
+        "price": 1500000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/mcdonalds-franchise.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":4,
+        "title": "NBA Team",
+        "price": 2120000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/nba-team.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":5,
+        "title": "Gaming Console",
+        "price": 299,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/gaming-console.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":6,
+        "title": "Mona Lisa",
+        "price": 780000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/mona-lisa.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":7,
+        "title": "Air Jordans",
+        "price": 125,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/air-jordans.jpg",
+        "isSellDisabled":true
+    },
+    {
+        "id":8,
+        "title": "Drone",
+        "price": 350,
+        "piece":0,
+        "imageUrl":"https://neal.fun/spend/images/drone.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":9,
+        "title": "Hot Tub",
+        "price": 6000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/hot-tub.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":10,
+        "title": "Luxury Wine",
+        "price": 7000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/luxury-wine.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":11,
+        "title": "Jet Ski",
+        "price": 12000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/jet-ski.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":12,
+        "title": "Rolex",
+        "price": 15000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/rolex.jpg",
+        "isSellDisabled":true
+    },   
+    {   
+        "id":13,
+        "title": "Skyscraper",
+        "price": 850000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/skyscraper.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":14,
+        "title": "Make a Movie",
+        "price": 100000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/make-a-movie.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":15,
+        "title": "Mansion",
+        "price": 45000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/mansion.jpg",
+        "isSellDisabled":true
+    }, 
+    {   
+        "id":16,
+        "title": "Formula 1 Car",
+        "price": 15000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/formula-1-car.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":17,
+        "title": "Yacht",
+        "price": 7500000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/yacht.jpg",
+        "isSellDisabled":true
+    },  
+    {   
+        "id":18,
+        "title": "Gold Bar",
+        "price": 700000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/gold-bar.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":19,
+        "title": "Cruise Ship",
+        "price": 930000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/cruise-ship.jpg",
+        "isSellDisabled":true
+    },{   
+        "id":20,
+        "title": "Video Game",
+        "price": 60,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/video-game.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":21,
+        "title": "Single Family Home",
+        "price": 300000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/single-family-home.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":22,
+        "title": "Monster Truck",
+        "price": 150000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/monster-truck.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":23,
+        "title": "Ferrari",
+        "price": 250000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/ferrari.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":24,
+        "title": "Airpods",
+        "price": 199,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/airpods.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":25,
+        "title": "Auto Rickshaw",
+        "price": 2300,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/auto-rickshaw.jpg",
+        "isSellDisabled":true
+    },{   
+        "id":26,
+        "title": "Superbowl Ad",
+        "price": 5250000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/superbowl-ad.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":27,
+        "title": "M1 Abrams",
+        "price": 8000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/m1-abrams.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":28,
+        "title": "Lobster Dinner",
+        "price": 45,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/lobster-dinner.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":29,
+        "title": "Boeing 747",
+        "price": 148000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/boeing-747.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":30,
+        "title": "Movie Ticket",
+        "price": 12,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/movie-ticket.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":31,
+        "title": "Year of Netflix",
+        "price": 100,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/year-of-netflix.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":32,
+        "title": "Apache Helicopter",
+        "price": 31000000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/apache-helicopter.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":33,
+        "title": "Ford F-150",
+        "price": 30000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/ford-f-150.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":34,
+        "title": "Designer Handbag",
+        "price": 5500,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/designer-handbag.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":35,
+        "title": "Acre of Farmland",
+        "price": 3000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/acre-of-farmland.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":36,
+        "title": "Amazon Echo",
+        "price": 99,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/amazon-echo.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":37,
+        "title": "Bike",
+        "price": 800,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/bike.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":38,
+        "title": "Diamond Ring",
+        "price": 10000,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/diamond-ring.jpg",
+        "isSellDisabled":true
+    },
+    {   
+        "id":39,
+        "title": "Book",
+        "price": 15,
+        "piece": 0,
+        "imageUrl": "https://neal.fun/spend/images/book.jpg",
+        "isSellDisabled":true
+    }
+]}
+

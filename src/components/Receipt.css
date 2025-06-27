@@ -1,0 +1,25 @@
+.text-color{
+    color: #333!important;
+    font-weight: 500!important;
+    font-family: 'Roboto', sans-serif!important;
+    font-size: 1.125rem;
+
+}
+
+.item-price{
+    color: #24c486!important;
+    font-weight: 700!important;
+    font-size: 1.125rem!important;
+}
+.text-total{
+    font-weight: 700!important;
+}
+
+.total-price{
+    color: #24c486!important;
+    font-weight: 700!important;
+    font-size: 1.125rem!important;
+    
+}
+
+
