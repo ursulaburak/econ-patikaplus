@@ -1,169 +1,150 @@
-import { useState, useEffect } from 'react'
-import { useSelector, useDispatch } from 'react-redux'
-import { productList, buy, sell, updateTotalPrice, updateInput } from '../redux/spend/spendSlice';
-import { Container, Row, Col, Card } from 'react-bootstrap';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './SpendMoney.css'
+import React, { useState, useEffect } from 'react';
+import './SpendMoney.css';
+import { SpendMoney } from '../../data';
 
-function SpendMoney() {
-
-  const dispatch = useDispatch()
-  const balanceValue = useSelector(state => state.spend.value);
-  const [animatedBalanceValue, setAnimatedBalanceValue] = useState(balanceValue);
-  const productsAll = useSelector(productList);
+const Products = () => {
+  const [budget, setBudget] = useState(100000000000);
+  const [displayBudget, setDisplayBudget] = useState(100000000000);
   const [quantities, setQuantities] = useState({});
+  const [receipts, setReceipts] = useState([]);
 
-  const billion = 1000000000;
-  const million = 1000000;
-  const thousand = 1000;
-  const hundred = 100;
+  // ANIMATION: COUNT
   useEffect(() => {
+    const duration = 200;
+    const steps = 10; 
+    const stepDuration = duration / steps;
+
+    const startValue = displayBudget;
+    const endValue = budget;
+    const increment = (endValue - startValue) / steps;
+
+    let currentStep = 0;
+
     const interval = setInterval(() => {
-      setAnimatedBalanceValue(prevValue => {
-        if (prevValue > balanceValue) {
-          if (prevValue - balanceValue >= billion) {
-            return prevValue - 100000001723;
-          } else if (prevValue - balanceValue >= million) {
-            return prevValue - 1000000;
-          } else if (prevValue - balanceValue >= thousand) {
-            return prevValue - 156;
-          } else if (prevValue - balanceValue >= hundred) {
-            return prevValue - 13;
-          } else {
-            return prevValue - 1;
-          }
-        } else {
-          return balanceValue;
-        }
-      });
-    }, 1);
+      currentStep++;
+      if (currentStep <= steps) {
+        setDisplayBudget(Math.round(startValue + (increment * currentStep)));
+      } else {
+        clearInterval(interval);
+      }
+    }, stepDuration);
 
     return () => clearInterval(interval);
-  }, [balanceValue]);
+  }, [budget]);
 
-
-  const handleBuy = (itemId) => {
-    const currentQuantity = quantities[itemId] || 0;
-    const quantityToBuy = currentQuantity + 1;
-    setQuantities(prevState => ({ ...prevState, [itemId]: quantityToBuy }));
-    dispatch(buy({ itemId, quantity: quantityToBuy }));
-  };
-
-  const handleSell = (itemId) => {
-    const currentQuantity = quantities[itemId] || 0;
-    if (currentQuantity > 0) {
-      const quantityToSell = currentQuantity - 1;
-      setQuantities(prevState => ({ ...prevState, [itemId]: quantityToSell }));
-      dispatch(sell({ itemId, quantity: quantityToSell }));
-    }
-  };
-
-  const calculateMaxQuantity = (itemId) => {
-    const product = productsAll.find(item => item.id === itemId);
-    return Math.floor(balanceValue / product.price);
-};
+  const handleBuy = (productId, price) => {
+    setBudget(prevBudget => prevBudget - price);
+    setQuantities(prev => ({ ...prev, [productId]: (prev[productId] || 0) + 1 }));
   
-
-  const handleQuantityChange = (itemId, value) => {
-    const newQuantity = parseInt(value) || 0;
-    const previousQuantity = quantities[itemId] || 0;
-    const maxQuantity = calculateMaxQuantity(itemId);
-    console.log(newQuantity, previousQuantity, maxQuantity);
-    const quantityToSell = Math.min(newQuantity, maxQuantity);
-      if (newQuantity >= previousQuantity) {
-        const diff = (newQuantity - previousQuantity);
-        dispatch(updateTotalPrice({ itemId, quantity: diff }));
-        setQuantities(prevState => ({ ...prevState, [itemId]: quantityToSell }));
-    } else {
-        const diff = (previousQuantity - quantityToSell);
-        dispatch(updateInput({ itemId, quantity: diff }));
-        setQuantities(prevState => ({ ...prevState, [itemId]: quantityToSell }));
-    }
-
-    //   if(newQuantity>=quantityToSell){
-    //     dispatch(updateTotalPrice({ itemId, quantity: quantityToSell }));
-    //     setQuantities(prevState => ({ ...prevState, [itemId]: quantityToSell }));
-    //   } 
-      
-      
-      
-    //   else if (newQuantity >= previousQuantity) {
-    //   const diff = (newQuantity - previousQuantity);
-    //   dispatch(updateTotalPrice({ itemId, quantity: diff }));
-    //   setQuantities(prevState => ({ ...prevState, [itemId]: newQuantity }));
-    // } else if(newQuantity<previousQuantity) {
-    //   const diff = (previousQuantity - newQuantity)
-    //   dispatch(updateInput({ itemId, quantity: diff }));
-    //   setQuantities(prevState => ({ ...prevState, [itemId]: newQuantity }));
-    // } else{
-    //   return null;
-    // }
+    const product = products.find(p => p.id === productId);
+    setReceipts(prev => {
+      const existing = prev.find(item => item.name === product.name);
+      if (existing) {
+        // ADD PRODUCT
+        return prev.map(item =>
+          item.name === product.name
+            ? { ...item, quantity: item.quantity + 1 }
+            : item
+        );
+      } else {
+        // ADD PRODUCT FOR THE FIRST TIME: ADD RECEIPT
+        return [...prev, { name: product.name, quantity: 1, price }];
+      }
+    });
   };
 
+  const handleSell = (productId, price) => {
+    const currentQuantity = quantities[productId] || 0;
+    if (currentQuantity > 0) {
+      setBudget(prevBudget => prevBudget + price);
+      setQuantities(prev => ({ ...prev, [productId]: currentQuantity - 1 }));
+    }
+  };
+
+  const handleQuantityChange = (productId, value, price) => {
+    const newQuantity = parseInt(value) || 0;
+    const currentQuantity = quantities[productId] || 0;
+
+    if (newQuantity >= 0) {
+      const difference = newQuantity - currentQuantity;
+
+      if (difference > 0) {
+        // PURCHASE
+        setBudget(prevBudget => prevBudget - (price * difference));
+      } else if (difference < 0) {
+        // SELL
+        setBudget(prevBudget => prevBudget + (price * Math.abs(difference)));
+      }
+
+      setQuantities(prev => ({ ...prev, [productId]: newQuantity }));
+    }
+  };
+
+  // RECEIPT: TOTAL
+  const totalAmount = receipts.reduce((total, receipt) => total + (receipt.price * receipt.quantity), 0);
 
   return (
-    <>
+    <div>
+      <div className='section budget-bar'>
+        <div>
+          <span>${displayBudget.toLocaleString()}</span>
+        </div>
+      </div>
 
-      <Container className='mx-auto mt-2 text-center text-white sticky-top balanceValue'>
-        <Row>
-          <p className='mt-3 money'>
-            {new Intl.NumberFormat('en-US', {
-              style: 'currency',
-              currency: 'USD',
-              minimumFractionDigits: 0,
-            }).format(animatedBalanceValue)}
-          </p>
-        </Row>
-      </Container>
+      <div className='product-box'>
+        {products.map((product) => (
+      <div key={product.id} className="product-item">
+      <img src={product.image} alt={product.name} />
+      <h3>{product.name}</h3>
+      <p>${product.price}</p>
+      <div className='box-btns'>
+        <button
+          onClick={() => handleSell(product.id, product.price)}
+          disabled={!(quantities[product.id] > 0)}
+          className={!(quantities[product.id] > 0) ? 'disabled' : 'sell-button'}>
+          Sell
+        </button>
+        <input
+          type="number"
+          value={quantities[product.id] || 0}
+          onChange={(e) => handleQuantityChange(product.id, e.target.value, product.price)}
+          min="0"/>
+        <button
+          onClick={() => handleBuy(product.id, product.price)}
+          disabled={budget < product.price}
+          className={budget < product.price ? 'disabled' : 'buy-button'}>
+          Buy
+        </button>
+      </div>
+    </div>
+  ))}
+  </div>
+      {/* RECEIPT */}
+      <div className='receipt'>
+      <h2>Your Receipt</h2>
+      {Object.entries(quantities)
+        .filter(([_, quantity]) => quantity > 0)
+        .map(([productId, quantity]) => {
+          const product = products.find(p => p.id === parseInt(productId));
+          return (
+            <div key={productId}>
+              <p>{product.name} - {quantity}x - <span className='price-receipt'>${product.price * quantity}</span></p>
+            </div>
+          );
+        })}
+      <hr />
+      <h3 >
+        TOTAL: <span className='price-receipt'>$
+        {Object.entries(quantities)
+          .reduce((total, [productId, quantity]) => {
+            const product = products.find(p => p.id === parseInt(productId));
+            return total + (product.price * quantity);
+          }, 0)
+          .toLocaleString()}</span>
+      </h3>
+    </div>
+    </div>
+  );
+};
 
-      <Container className='container-fluid mx-auto text-center p-0 m-0' style={{ backgroundColor: "#f1f2f6" }} >
-        <Row className="card-columns gx-2">
-          {productsAll.map((item) => (
-            <Col md={4} key={item.id} className='g-2'>
-              <Card className=" mx-auto d-block py-4 border-0 rounded-0">
-                <Card.Img variant="top" src={item.imageUrl} style={{ objectFit: "contain", height: 120 }} />
-                <Card.Body>
-                  <Card.Title className="mb-0 item-name">{item.title}</Card.Title>
-                  <Card.Text className="mt-0 item-price">
-                    {new Intl.NumberFormat('en-US', {
-                      style: 'currency',
-                      currency: 'USD',
-                      minimumFractionDigits: 0,
-                    }).format(item.price)}
-                  </Card.Text>
-                  <div className='input-group justify-content-center'>
-                    <button
-                      className='btn  me-2 px-4 opacity-100 border-0 buttons item-sell'
-                      type='button'
-                      disabled={quantities[item.id] <= 0 || item.piece === 0}
-                      onClick={(e) => handleSell(item.id, e)}>
-                      Sell
-                    </button>
-
-                    <input
-                      className='text-center w-25 me-2 item-input ps-3'
-                      type='number'
-                      value={quantities[item.id] || 0}
-                      onChange={(e) => handleQuantityChange(item.id, e.target.value)}
-                      onFocus={(e) => e.target.value = ""}
-                    />
-
-                    <button
-                      className='btn px-4 opacity-100 border-0 buttons item-buy'
-                      type='button'
-                      disabled={balanceValue === 0}
-                      onClick={(e) => handleBuy(item.id, e)}>
-                      Buy
-                    </button>
-                  </div>
-                </Card.Body>
-              </Card>
-            </Col>
-          ))}
-        </Row>
-      </Container>
-    </>
-  )
-}
-
-export default SpendMoney
+export default SpendMoney;
