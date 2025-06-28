@@ -33,10 +33,10 @@ Bu React tabanlı uygulama, kullanıcıların sanal olarak Bill Gates'in serveti
 
 ```bash
 # Projeyi klonlayın
-git clone [https://github.com/ursulaburak/spen-money-app.git]
+git clone [https://github.com/ursulaburak/spend-money-app.git]
 
 # Proje dizinine gidin
-cd w10-bill-gates-money-app
+cd spend-money-app
 
 # Bağımlılıkları yükleyin
 npm install
