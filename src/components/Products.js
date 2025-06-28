@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import './components/Products.css';
-import { products } from '../../data';
+import { products } from './src/data';
 
 const Products = () => {
   const [budget, setBudget] = useState(100000000000);
