@@ -1,4 +1,4 @@
-# Patika+ Frontend Bootcamp Hafta-10 (Spend Bill Gates' Money)
+# Spend Bill Gates Money
 
 Bu React tabanlı uygulama, kullanıcıların sanal olarak Bill Gates'in servetini harcayabileceği etkileşimli bir alışveriş simülasyonudur. Uygulamada çeşitli ürünler satın alınabilir, geri satılabilir ve toplam harcama anlık olarak takip edilebilir.
 
