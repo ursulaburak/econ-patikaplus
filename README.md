@@ -1,42 +1,53 @@
-# Available Scripts
+# Patika+ Frontend Bootcamp Hafta-10 (Spend Bill Gates' Money)
 
-In the project directory, you can run:
+Bu React tabanlı uygulama, kullanıcıların sanal olarak Bill Gates'in servetini harcayabileceği etkileşimli bir alışveriş simülasyonudur. Uygulamada çeşitli ürünler satın alınabilir, geri satılabilir ve toplam harcama anlık olarak takip edilebilir.
 
----- npm start ----
 
-Runs the app in the development mode.
-Open http://localhost:3000 to view it in the browser.
+## Proje Özellikleri
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+- ✅ 100 milyar dolarlık sanal bütçe
+- ✅ Gerçek zamanlı bütçe animasyonu
+- ✅ Satın alma ve satma işlemleri
+- ✅ Ürün miktarını doğrudan girme özelliği
+- ✅ Anlık olarak güncellenen fiş özeti
+- ✅ Modern, sade kullanıcı arayüzü
 
----- npm test ----
 
-Launches the test runner in the interactive watch mode.
-See the section about running tests for more information.
+## Bileşenler
 
----- npm run build ----
+- **Header**: Logo içeren üst menü.
+- **Hero**: Bill Gates görseli ve başlık içeren tanıtım alanı.
+- **Products**: Ürünlerin listelendiği ve satın alma/satma işlemlerinin yapıldığı ana bileşen. Bütçe animasyonu ve fiş özeti bu alanda yer alır.
+- **Footer**: Sayfa alt bilgilerini içerir.
 
-Builds the app for production to the build folder.
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.
-Your app is ready to be deployed!
+## Kullanılan Teknolojiler
 
-See the section about deployment for more information.
+- React (Fonksiyonel bileşenler ve Hooks)
+- useState, useEffect
+- CSS Modules (`Header.css`, `Hero.css`, `Products.css` ...)
+- Yerel veri yönetimi (`data.js` üzerinden ürünler)
 
----- npm run eject ----
 
-Note: this is a one-way operation. Once you eject, you can’t go back!
+## Kurulum
 
-If you aren’t satisfied with the build tool and configuration choices, you can eject at any time. This command will remove the single build dependency from your project.
+```bash
+# Projeyi klonlayın
+git clone [https://github.com/emreykaya/w10-bill-gates-money-app]
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except eject will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+# Proje dizinine gidin
+cd w10-bill-gates-money-app
 
-You don’t have to ever use eject. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+# Bağımlılıkları yükleyin
+npm install
 
-# Learn More!
+# Uygulamayı başlatın
+npm run dev
+```
 
-You can learn more in the Create React App documentation.
 
-To learn React, check out the React documentation.
+## Ekran Görüntüsü
+    
+![1](public/screenshots/1.png)
+![2](public/screenshots/2.png)
+![3](public/screenshots/3.png)
