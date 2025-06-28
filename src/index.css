@@ -1,0 +1,11 @@
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  --primary-color: linear-gradient(to top, #1BBD99, #2DCB74);
+  --background-color: #F1F2F6;
+
+}
+
+body {
+  background-color: var(--background-color);
+}
