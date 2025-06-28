@@ -1,8 +1,11 @@
-body {
-  background-color: #f1f2f6!important;
-  font-family: 'Roboto', sans-serif!important;
-  color: #333!important;
-  margin: 0!important;
-  padding: 0!important;
+:root {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  --primary-color: linear-gradient(to top, #1BBD99, #2DCB74);
+  --background-color: #F1F2F6;
+
 }
 
+body {
+  background-color: var(--background-color);
+}
