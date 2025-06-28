@@ -1,9 +1,9 @@
 import { useState } from 'react'
 import './App.css'
 import Header from './components/Header'
-import Hero from './components/Hero'
-import Products from './components/Products'
-import Footer from './components/Footer'
+import Receipt from './components/Receipt'
+import SpendMoney from './components/SpendMoney'
+
 
 function App() {
 
