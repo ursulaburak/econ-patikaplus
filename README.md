@@ -1,6 +1,7 @@
 # Spend Bill Gates Money
 
-Bu React tabanlı uygulama, kullanıcıların sanal olarak Bill Gates'in servetini harcayabileceği etkileşimli bir alışveriş simülasyonudur. Uygulamada çeşitli ürünler satın alınabilir, geri satılabilir ve toplam harcama anlık olarak takip edilebilir.
+Bu React tabanlı uygulama, kullanıcıların sanal olarak Bill Gates'in servetini harcayabileceği etkileşimli bir alışveriş simülasyonudur. 
+Uygulamada çeşitli ürünler satın alınabilir, geri satılabilir ve toplam harcama anlık olarak takip edilebilir.
 
 ## Kullanılan Teknolojiler
 
@@ -13,17 +14,14 @@ Bu React tabanlı uygulama, kullanıcıların sanal olarak Bill Gates'in serveti
 ## Kurulum
 
 "bash"
-# Projeyi klonlayın
-git clone [https://github.com/ursulaburak/spend-money-app.git]
 
-# Proje dizinine gidin
-cd spend-money-app
+*git clone [https://github.com/ursulaburak/spend-money-app.git]
 
-# Bağımlılıkları yükleyin
-npm install
+*cd spend-money-app
 
-# Uygulamayı başlatın
-npm run dev
+*npm install
+
+*npm run dev
 
 
 
