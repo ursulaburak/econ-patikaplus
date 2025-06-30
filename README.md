@@ -41,7 +41,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ## Screenshot
 
-![Screenshot Image] https://github.com/ursulaburak/Note-App/issues/1#issue-3188899407
+![Image] https://github.com/ursulaburak/Note-App/issues/1#issue-3188899407
 
 
 ## Learn More
