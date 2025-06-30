@@ -42,6 +42,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 ## Screenshot
 
 ![Example-1](assets/example-1.png)
+![Example-2](assets/example-2.svg)
 
 
 ## Learn More
