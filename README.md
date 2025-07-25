@@ -24,14 +24,11 @@ This is an interactive **Drum Kit** web application built using **HTML, CSS, and
 ## 📁 Project Structure
 
 drum-kit/
-│
-├── index.html # Main HTML page
-│
-├── styles.css # CSS file for layout and animations
-│
-├── app.js # JavaScript to handle sound and key events
-│
-└── README.md # Project documentation
+
+- index.html # Main HTML page
+- styles.css # CSS file for layout and animations
+- app.js # JavaScript to handle sound and key events
+- README.md # Project documentation
 
 Clone the repository:
    ```bash
