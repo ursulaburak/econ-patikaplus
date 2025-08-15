@@ -4,13 +4,6 @@ This project is a simple and functional **digital clock** web application built 
 
 ---
 
-## 🚀 Live Demo
-
-You can view the live version of this clock project here:  
-🔗 [https://ursulaburak.github.io/clock-odevi](https://ursulaburak.github.io/clock-odevi)
-
----
-
 How It Works
 
 - JavaScript fetches the current system time using `Date()`
