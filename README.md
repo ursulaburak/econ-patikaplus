@@ -1,8 +1,8 @@
-## LinkedIn Clone
+# LinkedIn Clone
 
 Bu proje, LinkedIn platformunun temel işlevselliğini taklit eden bir uygulamadır. Kullanıcılar, profil oluşturabilir, gönderi paylaşabilir ve diğer kullanıcıların paylaşımlarını görüntüleyebilirler. Proje, HTML, CSS ve JavaScript kullanılarak geliştirilmiştir.
 
-# Özellikler
+## Özellikler
 
 Kullanıcı kaydı ve oturum açma (şu anda manuel olarak yapılmaktadır)
 
@@ -12,11 +12,11 @@ Gönderi paylaşma ve görüntüleme
 
 Responsive tasarım ile mobil uyumluluk
 
-# Teknolojiler
+## Teknolojiler
 
 HTML5, CSS3, JavaScript
 
-# Kurulum
+## Kurulum
 
 Projeyi yerel makinenizde çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
@@ -28,11 +28,11 @@ cd linkedin-clone
 
 3. index.html dosyasını bir tarayıcıda açarak uygulamayı görüntüleyebilirsiniz.
 
-# Kullanım
+## Kullanım
 
 Uygulama, temel LinkedIn özelliklerini taklit eder. Kullanıcılar manuel olarak profil oluşturabilir ve gönderi paylaşabilirler. Henüz dinamik bir backend entegrasyonu bulunmamaktadır.
 
-# Katkı
+## Katkı
 
 Katkılar her zaman hoş karşılanır! Değişiklik yapmak isterseniz, lütfen aşağıdaki adımları izleyin:
 
@@ -45,7 +45,7 @@ Katkılar her zaman hoş karşılanır! Değişiklik yapmak isterseniz, lütfen 
    git push origin feature-branch
 5. Bir -pull request- oluşturun.
 
-# Lisans
+### Lisans
 
 Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE 
 
