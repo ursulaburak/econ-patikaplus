@@ -1,0 +1,18 @@
+#billgates {
+    border-radius: 50%;
+    width: 125px;
+    height: 125px;
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+.hero-container {
+    padding: 30px 0;
+}
+
+.hero-container h1 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 1.3rem;
+}

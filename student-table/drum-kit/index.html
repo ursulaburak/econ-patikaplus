@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drum Kit</title>
+    <link rel="stylesheet" href="css/style.css">
+    
+</head>
+<body>
+    <h1>Play Your Dream Song</h1>
+
+    <p>Aşağıdaki düğmelere tıklayarak davul sesleri çalabilirsiniz</p>
+
+    <!-- Sayfanın ortasına davul resmi eklendi -->
+    <img src="https://images.unsplash.com/photo-1519892300165-cb5542fb47c7?ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=80" 
+         alt="Drum Set" 
+         class="drum-image">
+
+    <div class="drum-kit">
+        <!-- Her bir davul tuşu için ayrı düğmeler -->
+    <button class="drum-btn" data-key="65">
+            A
+            <span class="sound-label">i</span>
+        </button>
+        <button class="drum-btn" data-key="83">
+            S
+            <span class="sound-label">ii</span>
+        </button>
+        <button class="drum-btn" data-key="68">
+            D
+            <span class="sound-label">iii</span>
+        </button>
+    
+    <button class="drum-btn" data-key="70">
+            F
+            <span class="sound-label">iv</span>
+        </button>
+        <button class="drum-btn" data-key="71">
+            G
+            <span class="sound-label">v</span>
+        </button>
+        <button class="drum-btn" data-key="72">
+            H
+            <span class="sound-label">vi</span>
+        </button>
+        <button class="drum-btn" data-key="74">
+            J
+            <span class="sound-label">vii</span>
+        </button>
+    
+    <button class="drum-btn" data-key="75">
+            K
+            <span class="sound-label">viii</span>
+        </button>
+        <button class="drum-btn" data-key="76">
+            L
+            <span class="sound-label">ix</span>
+        </button>
+     
+    </div>
+    
+    <script src ="js/script.js"></script>
+        
+
+</body>
+</html>
