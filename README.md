@@ -47,5 +47,5 @@ Katkılar her zaman hoş karşılanır! Değişiklik yapmak isterseniz, lütfen 
 
 ### Lisans
 
-Bu proje MIT Lisansı ile lisanslanmıştır. Daha fazla bilgi için LICENSE 
+Bu proje MIT Lisansı ile lisanslanmıştır.
 
