@@ -11,7 +11,7 @@ function App() {
       onClick={() =>
         handleAddPerson ({
            name: "Hakan",
-           avatar: "https://avatars.githubusercontent.com/ursulaburak",
+           avatar: "https://gravatar.com/avatar/c49a915c101b0f64551be368109b83c8?s=400&d=robohash&r=x",
            phoneNumbers: [
             { name: "work", number: "123 456 7890" },
             { name: "home", number: "444 212 0000" },
