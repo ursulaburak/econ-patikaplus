@@ -1,0 +1,76 @@
+footer {
+    background-color: white;
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    text-align: center;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+    width: 100px;
+    height: auto;
+    margin-top: 10px;
+}
+
+.fa-envelope {
+    color: black;
+    position: absolute;
+    top: 70px;
+    left: 880px;
+}
+
+.newsletter-input {
+    background-color: #fff;
+    background-image: url(https://neal.fun/general/mail.svg);
+    background-position: 10px;
+    background-repeat: no-repeat;
+    background-size: auto 15px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    color: #000;
+    font-size: 17px;
+    max-width: 220px;
+    outline: 0;
+    padding: 7px 5px 7px 40px;
+    width: 100%;
+}
+
+.newsletter-subscribe {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff5d9;
+    border: 1px solid #000;
+    border-radius: 5px;
+    box-shadow: none;
+    color: #000;
+    cursor: pointer;
+    font-size: 17px;
+    height: 100%;
+    margin-left: 5px;
+    padding: 7px 12px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+

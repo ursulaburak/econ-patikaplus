@@ -1,0 +1,115 @@
+.budget-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: var(--primary-color);
+    padding: 30px;
+    color: white;
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.product-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+    max-width: 930px;
+    margin: -20px auto;
+    padding: 20px;
+}
+
+.product-item {
+    padding: 15px;
+    background-color: white;
+}
+
+.product-item img {
+    width: 120px;
+    height: 120px;
+    max-width: 200px;
+    margin-bottom: 10px;
+}
+
+.box-btns {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.box-btns button {
+    padding: 5px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.box-btns input {
+    width: 60px;
+    text-align: center;
+    -moz-appearance: textfield;
+}
+
+.box-btns input::-webkit-outer-spin-button,
+.box-btns input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.quantity {
+    display: inline-block;
+    min-width: 30px;
+    padding: 5px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+}
+
+.section.budget-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.buy-button {
+    background: var(--primary-color);
+    color: white;
+  }
+  
+  .sell-button {
+    background-color: #ff6b6b; /* Soft kırmızı tonu */
+    color: white;
+  }
+  
+  .disabled {
+    background-color: #cccccc; /* Gri tonu */
+    cursor: not-allowed;
+  }
+
+  .receipt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:10px 480px;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .receipt h2 {
+    margin-bottom: 10px;
+  }
+  
+  .receipt p {
+    margin: 4px 0;
+  }
+
+  hr {
+    margin-top: 30px;
+    width: 200px;
+  }
+
+  .price-receipt {
+    color: #1BBD99;
+    font-weight: 700;
+  }
