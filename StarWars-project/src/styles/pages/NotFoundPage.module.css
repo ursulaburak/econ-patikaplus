@@ -1,0 +1,32 @@
+NotFoundPage.module.css.wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0d1117;
+  color: #fff;
+}
+
+.content {
+  text-align: center;
+}
+
+.content h1 {
+  font-size: 72px;
+  margin-bottom: 16px;
+  color: #f85149;
+}
+
+.content p {
+  font-size: 20px;
+  margin-bottom: 24px;
+}
+
+.homeLink {
+  padding: 10px 20px;
+  background-color: #58a6ff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
