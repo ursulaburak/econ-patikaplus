@@ -1,4 +1,4 @@
-# Patika+ Frontend Eğitimi - Projelerim ve Öğrendiklerim
+# Patika+ Frontend Web Bootcamp 
 
 Bu repo, Patika+ Frontend eğitiminde öğrendiklerim ve yaptığım projeleri içermektedir.
 
@@ -17,15 +17,15 @@ Bu repo, Patika+ Frontend eğitiminde öğrendiklerim ve yaptığım projeleri i
 
 ### 1. HTML & CSS Projeleri
 - **Kişisel Web Sayfası**: HTML ve CSS ile temel kişisel site oluşturma
-- **Google Clone**: Google arayüzünün HTML ve CSS ile klonu
+- **Linkedin Clone**: Google arayüzünün HTML ve CSS ile klonu
 
 ### 2. JavaScript Projeleri
 - **ToDo App**: LocalStorage destekli görev takip uygulaması
-- **Weather App**: API kullanarak hava durumu gösteren uygulama
+- **Asian-Kitchen-Menu Uygulaması**: API kullanarak asya mutfaklarını gösteren uygulama
 
 ### 3. React Projeleri
-- **React ToDo App**: React Hooks kullanılarak yapılmış görev uygulaması
-- **E-Ticaret Uygulaması**: Ürün listeleme, sepete ekleme özellikleri
+- **React Question App**: React Hooks kullanılarak yapılmış soru-cevap uygulaması
+- **Capstone Kütüphane Uygulaması**: Ürün listeleme, sepete ekleme özellikleri
 
 ## 📖 Kullanım
 
