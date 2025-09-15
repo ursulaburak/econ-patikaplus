@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Asian Kitchen</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="menu">
+        <!-- title -->
+        <div class="title">
+          <h2>Asian Kitchen's Menu</h2>
+        </div>
+        <!-- filter buttons-->
+        <div class="filter-buttons">
+          <button data-filter="all" data-id="All"
+            class ="btn btn-outline-dark btn-items">
+            <span class="">All</span>
+          </button>
+
+          <button data-filter="korean" data-id="Category1"
+            class ="btn btn-outline-dark btn-items">
+            <span class="">Korean Cuisine</span>
+          </button>
+
+          <button data-filter="china" data-id="Category2"
+            class ="btn btn-outline-dark btn-items">
+            <span class="">China</span>
+          </button>
+
+          <button data-filter="japan" data-id="Category3"
+            class ="btn btn-outline-dark btn-items">
+            <span class="">Japan Dishes</span>
+          </button>
+
+        </div>
+        <!-- menu items -->
+        <div class="products">
+
+          <div class="menu-items korean">
+            <img class="photo" src="https://twoplaidaprons.com/wp-content/uploads/2020/09/tteokbokki-top-down-view-of-tteokbokki-in-a-bowl-500x500.jpg"
+              alt="Tteokbokki">
+          <div class="menu-info">
+            <div class="menu-title">
+              <h4>Tteokbokki</h4>
+              <h4 class="price">10.99</h4>
+            </div>
+            <div class="menu-text">
+              Spicy rice cakes, serving with fish cake.
+            </div>
+          </div>
+        </div>
+      
+
+        <div class="menu-items china">
+        <img class="photo" src="https://www.forkknifeswoon.com/wp-content/uploads/2014/10/simple-homemade-chicken-ramen-fork-knife-swoon-01.jpg" 
+        alt="Chicken" ramen="">
+        <div class="menu-info">
+          <div class="menu-title">
+            <h4>Chicken Ramen</h4>
+            <h4 class="price">7.99</h4>
+          </div>
+          <div class="menu-text">
+          Chicken noodle soup, serving with vegetables such as soy bean, green onion. In an optional you can ask for egg. 
+          </div>
+        </div>
+      </div>
+
+        <div class="menu-items japan">
+        <img class="photo" src="https://www.curiouscuisiniere.com/wp-content/uploads/2020/04/Jajangmyeon-Korean-Noodles-in-Black-Bean-Sauce5.1200H-720x540.jpg" 
+        alt="Jajangmyeon">
+        <div class="menu-info">
+          <div class="menu-title">
+            <h4>Jajangmyeon</h4>
+            <h4 class="price">15.99</h4>
+          </div>
+          <div class="menu-text">
+          Black bean sauce noodle, serving with green onion. 
+          </div>
+        </div>
+      </div>
+
+
+        <div class="menu-items china">
+        <img class="photo" src="https://www.manusmenu.com/wp-content/uploads/2017/08/Onigiri-3-1-of-1.jpg" 
+        alt="Onigiri">
+        <div class="menu-info">
+          <div class="menu-title">
+            <h4>Onigiri</h4>
+            <h4 class="price">9.99</h4>
+          </div>
+          <div class="menu-text">
+          Rice Sandwich, serving with soy sauce. 
+          </div>
+        </div>
+      </div>
+   
+        <div class="menu-items japan">
+        <img class="photo" src="https://dwellbymichelle.com/wp-content/uploads/2020/05/DWELL-bibimbap.jpg" 
+        alt="Bibimbap">
+        <div class="menu-info">
+          <div class="menu-title">
+            <h4>Bibimbap</h4>
+            <h4 class="price">8.99</h4>
+          </div>
+          <div class="menu-text">
+          Boiling vegetables, serving with special hot sauce. 
+          </div>
+        </div>
+      </div>
+    </div>
+
+        
+
+
+        
+
+  </section>
+</div>
+          <!-- javascript -->
+        <script src="app.js"></script>
+         
+  </body>
+</html>
