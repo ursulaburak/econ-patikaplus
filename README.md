@@ -27,7 +27,7 @@ Bu repo, Patika+ Frontend eğitiminde öğrendiklerim ve yaptığım projeleri i
 - **React Question App**: React Hooks kullanılarak yapılmış soru-cevap uygulaması
 - **Capstone Kütüphane Uygulaması**: Ürün listeleme, sepete ekleme özellikleri
 
-## 📖 Kullanım
+## Kullanım
 
 Projeleri çalıştırmak için:
 ```bash
