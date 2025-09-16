@@ -1,29 +1,32 @@
 # Questions App
 
-🎯 **Questions App**, kullanıcıya rastgele sorular yönelten ve her soruya dört şıklı cevap seçenekleri sunan interaktif bir quiz (soru-cevap) uygulamasıdır. React ve Vite kullanılarak geliştirilmiş, sade ve kullanıcı dostu bir arayüz sunar.
+🎯 Questions App is an interactive quiz application that asks users random questions and provides four multiple-choice answers for each. It is built with React and Vite, offering a simple and user-friendly interface.
 
-🔗 Canlı Uygulama: [https://silver-questions-app.vercel.app](https://silver-questions-app.vercel.app)
+🔗 Live Demo: https://silver-questions-app.vercel.app
 
-## 🚀 Özellikler
+## Features
 
-- 📋 Çoktan seçmeli sorular
-- ⏱️ Hızlı ve etkileşimli kullanıcı deneyimi
-- 🎨 Basit ve şık tasarım (Material UI desteği)
-- ✅ Doğru/yanlış cevap geri bildirimi
-- 🏁 Quiz bitiminde sonuç ekranı
+📋 Multiple-choice questions
 
-## 🛠️ Kullanılan Teknolojiler
+⏱️ Fast and interactive user experience
 
-- [React](https://reactjs.org/)
-- [Vite](https://vitejs.dev/)
-- [Material UI](https://mui.com/) – tasarım bileşenleri için
-- [Vercel](https://vercel.com/) – canlı dağıtım
+🎨 Clean and stylish design (with Material UI support)
 
-## 📂 Kurulum
+✅ Correct/incorrect answer feedback
 
-Projeyi kendi bilgisayarınızda çalıştırmak için:
+🏁 Results screen at the end of the quiz
 
-```bash
+## Technologies Used
+
+*React
+*Vite
+*Material UI – for design components
+*Vercel – for live deployment
+
+## Installation
+
+To run the project locally:
+
 git clone https://github.com/kullanici-adi/silver-questions-app.git
 cd silver-questions-app
 npm install
