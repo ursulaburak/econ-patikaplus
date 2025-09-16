@@ -32,6 +32,3 @@ To run the project locally:
 3. npm install
 4. npm run dev
 
-
-npm install
-npm run dev
