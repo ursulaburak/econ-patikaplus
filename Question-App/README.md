@@ -1,20 +1,20 @@
 # Questions App
 
-🎯 Questions App is an interactive quiz application that asks users random questions and provides four multiple-choice answers for each. It is built with React and Vite, offering a simple and user-friendly interface.
+Questions App is an interactive quiz application that asks users random questions and provides four multiple-choice answers for each. It is built with React and Vite, offering a simple and user-friendly interface.
 
 🔗 Live Demo: https://silver-questions-app.vercel.app
 
 ## Features
 
-📋 Multiple-choice questions
+✅ Multiple-choice questions
 
-⏱️ Fast and interactive user experience
+✅ Fast and interactive user experience
 
-🎨 Clean and stylish design (with Material UI support)
+✅ Clean and stylish design (with Material UI support)
 
 ✅ Correct/incorrect answer feedback
 
-🏁 Results screen at the end of the quiz
+✅ Results screen at the end of the quiz
 
 ## Technologies Used
 
