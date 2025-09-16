@@ -27,7 +27,11 @@
 
 To run the project locally:
 
-git clone https://github.com/kullanici-adi/silver-questions-app.git
-cd silver-questions-app
+1. git clone https://github.com/kullanici-adi/silver-questions-app.git
+2. cd silver-questions-app
+3. npm install
+4. npm run dev
+
+
 npm install
 npm run dev
