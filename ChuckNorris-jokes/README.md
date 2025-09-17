@@ -5,6 +5,7 @@
 
 # Chuck Norris Joke
 A responsive website that shows a list of categories of gun-loaded Chuck Norris jokes.
+
 live demo: https://chuck-norris-jokes-kappa.vercel.app/
 
 ## How it works?
@@ -19,5 +20,6 @@ Checkout more [here](https://en.m.wikipedia.org/wiki/Chuck_Norris_facts)
 
 ## API used
 [chucknorris.io](https://api.chucknorris.io) is a free JSON API for hand curated Chuck Norris facts.
+
 
 
